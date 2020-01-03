@@ -7,7 +7,7 @@ function Login(props) {
       });
 
     const signUpButton = (
-        <a href='/signUp' style={{ color: '#00B100', textShadowColor: 'black', textShadowRadius: 8, textShadowOffset: { width: 0, height: 0 } }}>
+        <a href='/Signup' style={{ color: '#00B100', textShadowColor: 'black', textShadowRadius: 8, textShadowOffset: { width: 0, height: 0 } }}>
             Sign up
         </a>
     );
@@ -36,7 +36,7 @@ function Login(props) {
         username = "Bigfoot"
       }
       _storeData(username);
-      window.location='/main'
+      window.location='/Profile'
     }
 
     return (
@@ -50,10 +50,10 @@ function Login(props) {
                 <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter email" />
                 <label for="enterPassword">Password</label>
                 <input type="password" class="form-control" id="enterPassword" placeholder="Password" />
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">{signInButton}</button>
                 <p>
                     Don't have an account?
-                    <button type="signUp" class="btn btn-secondary">Sign Up</button>
+                    <button type="signUp" class="btn btn-secondary">{signUpButton}</button>
                 </p>
             </form>
         </div>
