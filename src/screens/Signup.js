@@ -11,7 +11,7 @@ export default function LoginScreen(props) {
 
     const signUpButton = (
         <div>
-            <a href="/Login" style={{ padding: 10, fontSize: 18, color: '#00B100', textShadowColor: 'black', textShadowRadius: 8, textShadowOffset: { width: 0, height: 0 } }}>
+            <a href="/Profile" style={{ padding: 10, fontSize: 18, color: '#00B100', textShadowColor: 'black', textShadowRadius: 8, textShadowOffset: { width: 0, height: 0 } }}>
                 Sign up
             </a>
         </div>
@@ -32,7 +32,7 @@ export default function LoginScreen(props) {
                         <input type="password" class="form-control" id="enterPassword" placeholder="Password" />
                         <label for="confirmPassword">Password</label>
                         <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" />
-                        <button type="submit" class="btn btn-primary">{signUpButton}}</button>
+                        <button type="submit" class="btn btn-primary">{signUpButton}</button>
                     </form>
         </div >
     );

@@ -36,7 +36,7 @@ export default function Hikes(props) {
                         <img src={hike.photo} style={{ width: '100%', height: 200 }} />
                         <div>
                             {/* this would be a request maybe */}
-                            <div onClick={() => window.location = "/hike"}> 
+                            <div onClick={() => window.location = "/Hike"}> 
                             <p>
                                 {hike.name}
                             </p>

@@ -5,6 +5,8 @@ import Login from './screens/Login';
 import Signup from './screens/Signup';
 import Profile from './screens/Profile';
 import Hikes from './screens/Hikes';
+import Hike from './screens/Hike';
+import Clickedprofile from './screens/Clickedprofile';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
             <Route exact path="/Signup" component={Signup} />
             <Route exact path="/Profile" component={Profile} />
             <Route exact path="/Hikes" component={Hikes} />
+            <Route exact path="/Hike" component={Hike} />
+            <Route exact path="/Clickedprofile" component={Clickedprofile} />
             {/* <Route exact path="/saved" component={Saved} />
             {/* <Route exact path="/books/:id" component={Detail} /> */}
             {/* <Route component={NotFound} /> */} */}
